@@ -1,6 +1,6 @@
-package com.hsntncy.gdgeskisehir.ui
+package com.hsntncy.threebodysimulation.ui
 
-// androidApp/src/main/java/com/hsntncy/gdgeskisehir/ui/ThreeBodyScreen.kt
+// androidApp/src/main/java/com/hsntncy/threebodysimulation/ui/ThreeBodyScreen.kt
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -22,9 +22,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.hsntncy.gdgeskisehir.ThreeBodyViewModel
-import com.hsntncy.gdgeskisehir.model.SimMode
-import com.hsntncy.gdgeskisehir.model.SpaceCanvas
+import com.hsntncy.threebodysimulation.ThreeBodyViewModel
+import com.hsntncy.threebodysimulation.model.SimMode
+import com.hsntncy.threebodysimulation.model.SpaceCanvas
 
 
 @Composable

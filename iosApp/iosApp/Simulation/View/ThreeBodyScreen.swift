@@ -46,7 +46,7 @@ struct ThreeBodyScreen: View {
                 Button(action: {
                     viewModel.toggleSimulation()
                 }) {
-                    Text("Simülasyonu Başlat / Durdur")
+                    Text("Start/ Stop")
                         .font(.headline)
                         .foregroundColor(.black)
                         .frame(maxWidth: 250)

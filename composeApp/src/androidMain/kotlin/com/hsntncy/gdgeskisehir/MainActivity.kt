@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

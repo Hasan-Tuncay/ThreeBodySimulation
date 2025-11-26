@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 
 class Greeting {
     private val platform = getPlatform()

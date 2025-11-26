@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir.model
+package com.hsntncy.threebodysimulation.model
 
 // Modları isimlendirelim
 enum class SimMode(val title: String, val modeId: Int) {

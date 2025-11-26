@@ -1,14 +1,14 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 
-// androidApp/src/main/java/com/hsntncy/gdgeskisehir/simulation/ThreeBodyViewModel.kt
+// androidApp/src/main/java/com/hsntncy/threebodysimulation/simulation/ThreeBodyViewModel.kt
 
 import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.hsntncy.gdgeskisehir.ThreeBodyEngine
-import com.hsntncy.gdgeskisehir.Point2D
-import com.hsntncy.gdgeskisehir.model.PlanetUiState
-import com.hsntncy.gdgeskisehir.model.SimMode
+import com.hsntncy.threebodysimulation.ThreeBodyEngine
+import com.hsntncy.threebodysimulation.Point2D
+import com.hsntncy.threebodysimulation.model.PlanetUiState
+import com.hsntncy.threebodysimulation.model.SimMode
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow

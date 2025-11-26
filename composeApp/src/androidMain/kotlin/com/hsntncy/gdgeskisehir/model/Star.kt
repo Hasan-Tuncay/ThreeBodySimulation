@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir.model
+package com.hsntncy.threebodysimulation.model
 
 
 // Yıldız efekti için basit bir data class

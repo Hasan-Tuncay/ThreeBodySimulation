@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 
 import kotlinx.cinterop.*
 import platform.posix.rand

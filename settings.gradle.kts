@@ -1,4 +1,4 @@
-rootProject.name = "GdgEskisehir"
+rootProject.name = "ThreeBodySimulation"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {

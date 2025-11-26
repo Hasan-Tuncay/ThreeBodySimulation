@@ -58,7 +58,7 @@ void applyGravity() {
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_hsntncy_gdgeskisehir_ThreeBodyEngine_nativeInitScenario(JNIEnv* env, jobject, jint mode) {
+Java_com_hsntncy_threebodysimulation_ThreeBodyEngine_nativeInitScenario(JNIEnv* env, jobject, jint mode) {
 std::lock_guard<std::mutex> lock(simulationLock);
 
 if (b2World_IsValid(worldId)) {
@@ -173,7 +173,7 @@ bodies.push_back(moon);
 // ... Diğer fonksiyonlar (step, getState, destroy) AYNI KALSIN ...
 // Onları tekrar yazmadım çünkü zaten doğrulardı.
 extern "C" JNIEXPORT void JNICALL
-Java_com_hsntncy_gdgeskisehir_ThreeBodyEngine_nativeStep(JNIEnv* env, jobject) {
+Java_com_hsntncy_threebodysimulation_ThreeBodyEngine_nativeStep(JNIEnv* env, jobject) {
 std::lock_guard<std::mutex> lock(simulationLock);
 if (!b2World_IsValid(worldId) || bodies.size() < 3) return;
 applyGravity();
@@ -181,7 +181,7 @@ b2World_Step(worldId, 1.0f / 60.0f, 4);
 }
 
 extern "C" JNIEXPORT jfloatArray JNICALL
-Java_com_hsntncy_gdgeskisehir_ThreeBodyEngine_nativeGetState(JNIEnv* env, jobject) {
+Java_com_hsntncy_threebodysimulation_ThreeBodyEngine_nativeGetState(JNIEnv* env, jobject) {
     std::lock_guard<std::mutex> lock(simulationLock);
     jfloatArray result = env->NewFloatArray(6);
     float temp[6] = {0};
@@ -200,7 +200,7 @@ Java_com_hsntncy_gdgeskisehir_ThreeBodyEngine_nativeGetState(JNIEnv* env, jobjec
 }
 
 extern "C" JNIEXPORT void JNICALL
-Java_com_hsntncy_gdgeskisehir_ThreeBodyEngine_nativeDestroy(JNIEnv* env, jobject) {
+Java_com_hsntncy_threebodysimulation_ThreeBodyEngine_nativeDestroy(JNIEnv* env, jobject) {
 std::lock_guard<std::mutex> lock(simulationLock);
 if (b2World_IsValid(worldId)) {
 b2DestroyWorld(worldId);
@@ -209,7 +209,7 @@ worldId = b2_nullWorldId;
 bodies.clear();
 }
 extern "C" JNIEXPORT void JNICALL
-Java_com_hsntncy_gdgeskisehir_ThreeBodyEngine_nativeSetBodyPosition(JNIEnv* env, jobject, jint index, jfloat x, jfloat y) {
+Java_com_hsntncy_threebodysimulation_ThreeBodyEngine_nativeSetBodyPosition(JNIEnv* env, jobject, jint index, jfloat x, jfloat y) {
 // Simülasyon çalışırken veri değiştireceğimiz için kilit şart
 std::lock_guard<std::mutex> lock(simulationLock);
 

@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 actual class ThreeBodyEngine {
 
     // Kütüphaneyi yükle (CMakeLists.txt'de "box2d_bridge" demiştik)

@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.Image
@@ -13,12 +13,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import com.hsntncy.gdgeskisehir.ui.ThreeBodyScreen
+import com.hsntncy.threebodysimulation.ui.ThreeBodyScreen
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
-import gdgeskisehir.composeapp.generated.resources.Res
-import gdgeskisehir.composeapp.generated.resources.compose_multiplatform
+import threebodysimulation.composeapp.generated.resources.Res
+import threebodysimulation.composeapp.generated.resources.compose_multiplatform
 
 @Composable
 @Preview

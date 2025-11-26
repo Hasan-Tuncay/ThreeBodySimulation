@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir
+package com.hsntncy.threebodysimulation
 
 import platform.UIKit.UIDevice
 // .def dosyasında "package = cocoapods.box2d" dediysen import odur.

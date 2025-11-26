@@ -67,7 +67,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.hsntncy.gdgeskisehir.shared"
+    namespace = "com.hsntncy.threebodysimulation.shared"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     compileOptions {

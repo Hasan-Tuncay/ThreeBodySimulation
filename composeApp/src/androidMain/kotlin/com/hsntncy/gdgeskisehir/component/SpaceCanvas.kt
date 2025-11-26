@@ -1,4 +1,4 @@
-package com.hsntncy.gdgeskisehir.model
+package com.hsntncy.threebodysimulation.model
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background

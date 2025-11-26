@@ -19,7 +19,7 @@ struct SpaceCanvas: View {
     let onDrag: (Int, Float, Float) -> Void
 
     // Sabitler (Android ile aynı)
-    private let scale: CGFloat = 120.0
+    private let scale: CGFloat = 60.0
     private let touchPadding: CGFloat = 50.0
 
     // Yıldızları bir kere oluştur (State)
@@ -154,9 +154,9 @@ struct SpaceCanvas: View {
     // Yardımcılar
     private func getVisualRadius(index: Int) -> CGFloat {
         switch index {
-        case 0: return 40.0 // Güneş
-        case 1: return 25.0 // Dünya
-        case 2: return 15.0 // Ay
+        case 0: return 16.0 // Güneş
+        case 1: return 8.0 // Dünya
+        case 2: return 2.0 // Ay
         default: return 15.0
         }
     }
