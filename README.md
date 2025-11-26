@@ -175,7 +175,7 @@ App entry point:
 ### Android Setup
 
 ```bash
-git clone https://github.com/<username>/ThreeBodySimulation.git
+git clone https://github.com/Hasan-Tuncay/ThreeBodySimulation.git
 cd ThreeBodySimulation
 ```
 
