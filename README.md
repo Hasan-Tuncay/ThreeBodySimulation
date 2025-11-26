@@ -16,12 +16,18 @@
 </div>
 
 ---
+---<img width="2816" height="1536" alt="flow_2" src="https://github.com/user-attachments/assets/3adb7b76-3d99-40e1-b4bc-8a503f96eec3" />
 
 ## 1. Overview
 
 **ThreeBodySimulation** demonstrates how a high-performance **C++ physics engine (Box2D)** can be integrated into a modern **Kotlin Multiplatform (KMP)** codebase while preserving platform abstraction.
 
 This project is a **Proof of Concept (PoC)** designed to answer a core systems-engineering question:
+
+
+https://github.com/user-attachments/assets/c60cd637-db49-473d-ab98-f0d98d16638a
+
+
 
 > **How can native C++ physics code be reused across Android and iOS while maintaining a single shared API in Kotlin?**
 
@@ -196,7 +202,7 @@ cd ThreeBodySimulation
 2. Select simulator  
 3. Press Run  
 
----
+
 
 ## 6. Technologies Used
 
