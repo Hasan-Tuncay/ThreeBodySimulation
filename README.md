@@ -62,7 +62,7 @@ flowchart TD
 
         subgraph ANDROID_BUILD["Build Time (CMake)"]
             CMAKE["CMake build system"]
-            CXX["C plus plus source code"]
+            CXX["C or C++ source code"]
             CMAKE -->|"Compiles and links"| SO
             CMAKE -.->|"Reads sources"| CXX
         end
