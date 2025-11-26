@@ -3,7 +3,7 @@ headers = box2d/box2d.h
 
 # DİKKAT: İki kütüphaneyi de buraya, aralarında boşluk bırakarak yazıyoruz.
 # Bu satır Kotlin'e "Bu dosyaları Framework'ün içine göm!" emrini verir.
-staticLibraries = libshared.a libbox2d.a
+staticLibraries =  libbox2d.a
 
 # Kütüphanelerin bulunduğu klasörü gösteriyoruz
 libraryPaths = src/nativeInterop/cinterop/lib
